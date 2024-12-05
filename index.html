@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カメラで写真を撮影</title>
+    <title>カメラまたはファイル選択</title>
 </head>
 <body>
-    <h1>カメラで写真を撮影</h1>
+    <h1>カメラまたはファイルを選択</h1>
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="cameraInput">写真を撮影:</label>
-        <input type="file" id="cameraInput" name="photo" accept="image/*" capture="environment">
+        <label for="fileInput">写真を撮影または選択:</label>
+        <input type="file" id="fileInput" name="photo" accept="image/*">
         <br><br>
         <button type="submit">送信</button>
     </form>
